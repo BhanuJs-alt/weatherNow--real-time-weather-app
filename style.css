@@ -1,0 +1,206 @@
+/* --- Global Page Styles --- */
+body {
+    background-color: #030314;       
+    font-family: Arial, sans-serif;   
+    color: #ffffff;                  
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    background-color: transparent !important;
+    padding: 20px 0;
+  }
+  .navbar-brand {
+    color: var(--text-primary) !important;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  
+  /* --- Heading & Header Styles --- */
+  h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* --- Search Bar Area --- */
+  .container1 {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 40px;
+  }
+  
+  #city {
+    background-color: #121225; 
+    border: 1px solid #222244;
+    border-radius: 8px;       
+    color: white;
+    padding: 12px;
+    width: 300px;  
+    font-size: 0.95rem;            
+    margin-right: 10px;        
+  }
+  
+  #search {
+    background-color: #2b47fc; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+  }
+  
+  /* ---  Main Structural Layout --- */
+  .main {
+    display: flex;
+    width: 90%;               
+    margin: 0 auto;            
+  }
+  
+  .left {
+    width: 70%;                
+    display: flex;
+    flex-direction: column;    
+  }
+  
+  .right {
+    width: 30%;                
+    background-color: #121225; 
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 20px;         
+  }
+  
+  /* --- Weather Card --- */
+  .Main-card {
+    /* Creating a simple gradient from left to right */
+    background: linear-gradient(to right, #2b47fc, #17248c); 
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+  }
+  
+  .r-info h1 {
+    text-align: left; 
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .dayBox {
+    display: flex; 
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .l-info h1 {
+    font-size: 4.5rem;
+    font-size: 60px;
+    margin: 0;
+  }
+  
+  /* --- Stats Info Row (Feels like, Humidity, etc.) --- */
+  .info-card {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+  }
+  
+  .s-box {
+    background-color: #121225;
+    border-radius: 12px;
+    width: 23%;                    
+    padding: 15px;
+    box-sizing: border-box;         
+  }
+  
+  .s-box h4 {
+    color: #7f8499;                 
+    font-size: 14px;
+    margin-top: 0;
+  }
+  
+  .s-box h5 {
+    font-size: 22px;
+    margin: 0;
+  }
+  
+  /* -- Daily Forecast Row --- */
+  .daily-box {
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .d-box {
+    background-color: #121225;
+    border-radius: 12px;
+    width: 13%;                     
+    padding: 15px 5px;
+    text-align: center;
+  }
+  
+  .d-box h5 {
+    margin: 5px 0;
+  }
+  
+  /* ---  Hourly Sidebar Row Elements --- */
+  .hourly-box {
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .hour-row {
+    background-color: #1c1c3a; 
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  .hour-row h6 {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  @media (max-width: 768px) {
+  
+    .main {
+      flex-direction: column;
+      width: 95%; 
+    }
+  
+    .left {
+      width: 100%; 
+    }
+  
+    .right {
+      width: 100%; 
+      margin-left: 0;
+      margin-top: 30px; 
+      box-sizing: border-box;
+    }
+    .info-card {
+      flex-wrap: wrap; 
+      gap: 10px; 
+    }
+  
+    .s-box {
+      width: 48%; 
+      margin-bottom: 10px;
+    }
+    .daily-box {
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center; 
+    }
+  
+    .d-box {
+      width: 22%; 
+    }
+    .l-info h1 {
+      font-size: 45px;
+    }
+  }

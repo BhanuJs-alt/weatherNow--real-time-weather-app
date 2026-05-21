@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>WeatherNow</title>
+
+</head>
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://img.icons8.com/?size=100&id=arTIUtO5zOTy&format=png&color=000000" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+      WeatherNow
+      </a>
+    </div>
+  </nav>
+       <div class="container">
+           <h1>How's the sky today?</h1>
+           <div class="container1">
+            <input type="text" placeholder="Search for a place" id="city">
+            <button id="search">Search</button>
+           </div>
+          <div class="main">
+            <div class="left">
+              <div class="Main-card">
+                <div class="r-info">  
+                 <h1 id="cityName"></h1>
+                 <h3 id="country"></h3>
+                 <div class="dayBox">
+                  <h3 id="day"></h3>
+                  <h3 id="date"></h3>
+                 </div>
+                
+                </div>
+                <div class="l-info">
+                  <h1 id="temp">30'C</h1>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="s-box">
+                  <h4>Feels like</h4>
+                  <h5 id="temp2">18'C</h5>
+                </div>
+                <div class="s-box">
+                  <h4>Humidity</h4>
+                  <h5 id="humidity">46%</h5>
+                </div>
+                <div class="s-box">
+                  <h4>Precipitation</h4>
+                  <h5 id="preci">0 mm</h5>
+                </div>
+                <div class="s-box">
+                  <h4>Wind</h4>
+                  <h5 id="wind">14 km/h</h5>
+                </div>
+              </div>
+              <div class="daily-box">
+                <div class="d-box">
+                  <h5 id="day1">Mon</h5>
+                  <h5 id="temp3">18'C</h5>
+                </div>
+                <div class="d-box">
+                  <h5 id="day2">Tue</h5>
+                  <h5 id="temp4">20'C</h5>
+                </div>
+                <div class="d-box">
+                  <h5 id="day3">Wed</h5>
+                  <h5 id="temp5">19'C</h5>
+                </div>
+                <div class="d-box">
+                  <h5 id="day4">Thu</h5>
+                  <h5 id="temp6">21'C</h5>
+                </div>
+                <div class="d-box">
+                  <h5 id="day5">Fri</h5>
+                  <h5 id="temp7">22'C</h5>
+                </div>
+                <div class="d-box">
+                  <h5 id="day6">Sat</h5>
+                  <h5 id="temp8">26'C</h5>
+                </div>
+                <div class="d-box">
+                  <h5 id="day7">Sun</h5>
+                  <h5 id="temp9">22'C</h5>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <h3>Hourly Forecast</h3>
+                <div class="hourly-box">
+                  <div class="hour-row">
+                    <h6 id="hour1">3pm</h6>
+                    <h6 id="temp10">19'C</h6>
+                  </div>
+                  <div class="hour-row">
+                    <h6 id="hour2">4pm</h6>
+                    <h6 id="temp11">19'C</h6>
+                  </div>
+                  <div class="hour-row">
+                    <h6 id="hour3">5pm</h6>
+                    <h6 id="temp12">19'C</h6>
+                  </div>
+                  <div class="hour-row">
+                    <h6 id="hour4">6pm</h6>
+                    <h6 id="temp13">19'C</h6>
+                  </div>
+                  <div class="hour-row">
+                    <h6 id="hour5">7pm</h6>
+                    <h6 id="temp14">19'C</h6>
+                  </div>
+                  <div class="hour-row">
+                    <h6 id="hour6">8pm</h6>
+                    <h6 id="temp15">19'C</h6>
+                  </div>
+                  <div class="hour-row">
+                    <h6 id="hour7">9pm</h6>
+                    <h6 id="temp16">19'C</h6>
+                  </div>
+                  <div class="hour-row">
+                    <h6 id="hour8">10pm</h6>
+                    <h6 id="temp17">19'C</h6>
+                  </div>   
+                </div>
+            </div>
+          </div>
+       </div>
+       <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
