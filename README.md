@@ -1,4 +1,5 @@
 # WeatherNow 🌤️
+live link: https://weather-now-real-time-weather-app.vercel.app/
 
 A sleek, real-time weather forecasting application built with a responsive dashboard UI. This project displays current weather statistics, an hourly breakdown, and a 7-day forecast for any searched location using live API data.
 
