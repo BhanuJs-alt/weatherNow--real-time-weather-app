@@ -17,18 +17,10 @@ let day= document.querySelector("#day");
 let day1 = document.querySelector("#day1");
 let day2 = document.querySelector("#day2");
 let day3 = document.querySelector("#day3");
-let day4 = document.querySelector("#day4");
-let day5 = document.querySelector("#day5");
-let day6 = document.querySelector("#day6");
-let day7 = document.querySelector("#day7");
 
 let temp3 = document.querySelector("#temp3");
 let temp4 = document.querySelector("#temp4");
 let temp5 = document.querySelector("#temp5");
-let temp6 = document.querySelector("#temp6");
-let temp7 = document.querySelector("#temp7");
-let temp8 = document.querySelector("#temp8");
-let temp9 = document.querySelector("#temp9");
 
 let hour1 = document.querySelector("#hour1");
 let hour2 = document.querySelector("#hour2");
@@ -110,7 +102,7 @@ async function getData(city){
 //function to fetch 7days forecast
 async function dailyData(city){
     try {
-      const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=c5afa270409441d6b9c91551261905&q=${city}&days=7`);
+      const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=c5afa270409441d6b9c91551261905&q=${city}&days=3`);
       if(response.ok){
         const data = await response.json();
         console.log(data);
@@ -118,26 +110,14 @@ async function dailyData(city){
       const date1=data.forecast.forecastday[0].date;
       const date2=data.forecast.forecastday[1].date;
       const date3=data.forecast.forecastday[2].date;
-      const date4=data.forecast.forecastday[3].date;
-      const date5=data.forecast.forecastday[4].date;
-      const date6=data.forecast.forecastday[5].date;
-      const date7=data.forecast.forecastday[6].date;
 
       printDay(date1,day1);
       printDay(date2,day2);
       printDay(date3,day3);
-      printDay(date4,day4);
-      printDay(date5,day5);
-      printDay(date6,day6);
-      printDay(date7,day7);
 
        temp3.innerText=data.forecast.forecastday[0].day.maxtemp_c;
        temp4.innerText=data.forecast.forecastday[1].day.maxtemp_c;
        temp5.innerText=data.forecast.forecastday[2].day.maxtemp_c;
-       temp6.innerText=data.forecast.forecastday[3].day.maxtemp_c;
-       temp7.innerText=data.forecast.forecastday[4].day.maxtemp_c;
-       temp8.innerText=data.forecast.forecastday[5].day.maxtemp_c;
-       temp9.innerText=data.forecast.forecastday[6].day.maxtemp_c;
 
 
        console.log(data.forecast.forecastday[0].hour[12].temp_c);

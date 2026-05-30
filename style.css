@@ -130,7 +130,7 @@ body {
   /* -- Daily Forecast Row --- */
   .daily-box {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-evenly;
   }
   
   .d-box {
